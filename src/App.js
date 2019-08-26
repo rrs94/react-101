@@ -3,11 +3,10 @@ import Clock from './components/Clock';
 import './App.css';
 
 function App() {
-  const date = setInterval(new Date(), 1000);
   return (
     <div className="App">
       <header className="App-header">
-        <Clock date={date} />
+        <Clock date={new Date()} />
       </header>
     </div>
   );
